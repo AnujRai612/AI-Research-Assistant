@@ -1,25 +1,38 @@
-AI Researcher
+# AI Research Agent
 
-Your new AI Researcher, that can browse papers on a given topic at arxiv.org, read papers in depth via the read_pdf tool, perform research and export a ready-to-publish research paper. (ONLY FOR EDUCATIONAL PURPOSES)
+This project automates academic research workflows by searching scholarly papers, extracting PDF content, analyzing research material using LLMs, and generating summarized research outputs. The system is modular and designed to act as an AI-powered research assistant.
 
-▶️ Watch the Setup Video
-🎥 How to Get Started with This Project
-([https://www.youtube.com/watch?v=0ascQRbv7Kk](https://youtu.be/lUkW2mo-kJk?si=vtG3XIDGBzOHjAI-))
+---
 
-🚀 Quick Start
+## Features
 
-Clone the repo and run:
+- Automated research paper search using ArXiv
+- PDF downloading and text extraction pipeline
+- AI-powered summarization and content analysis
+- Multiple research pipeline implementations
+- Modular utilities for reading and writing PDF files
+- CLI-based research execution workflow
+- Easily extendable for new data sources and models
 
-Setup UV if not already:  https://www.youtube.com/watch?v=Dgf7Lp0B_hI
+---
 
-```
-uv sync
-```
+## Tech Stack
 
-That’s it. This command:
+- Python 3.8+
+- Large Language Models (API-based)
+- ArXiv API for academic paper search
+- PDF Processing Libraries
+- CLI Interface
+- pyproject.toml for dependency management
 
-Creates a virtual environment (if one doesn't exist)
+---
 
-Installs all dependencies from uv.lock
+## Architecture
 
-Sets up everything exactly as expected
+1. Accept research topic or query from user
+2. Fetch relevant academic papers using ArXiv API
+3. Download and parse PDF documents
+4. Process extracted text using LLM pipeline
+5. Generate summarized insights
+6. Export structured research output
+
